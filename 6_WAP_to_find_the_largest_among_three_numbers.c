@@ -6,7 +6,7 @@ int main()
     int p, q, r;
 
     // taking input from the user
-    printf("Enter three numbers: ");
+    printf("Enter three numbers\n");
     scanf("%d %d %d", &p, &q, &r);
 
     // checking if the p > q 

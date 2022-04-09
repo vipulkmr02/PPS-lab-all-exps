@@ -6,7 +6,7 @@ int main()
     int number;
 
     // taking input from the user
-    printf("Enter a number: ");
+    printf("Enter a number\n");
     scanf("%d", &number);
 
     // checking the number's divisibility with two

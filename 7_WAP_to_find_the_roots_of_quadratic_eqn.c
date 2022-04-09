@@ -7,7 +7,7 @@ int main()
     int a, b, c;
 
     // asking the user for the co-efficient(s)
-    printf("Enter the co-efficients: ");
+    printf("Enter the co-efficients\n");
     scanf("%d %d %d", &a, &b, &c);
 
     // calculating Determinant

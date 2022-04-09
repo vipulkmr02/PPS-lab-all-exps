@@ -5,7 +5,7 @@ int main(){
     int a, b;
 
     // asking the user to enter the values for the variables
-    printf("ENTER TWO NUMBERS: ");
+    printf("ENTER TWO NUMBERS\n");
     scanf("%d %d", &a, &b);
 
     // performing the arithmetic operations
