@@ -21,13 +21,14 @@ int main()
         // shortening the number for next time
         number /= 10;
         reverse = (reverse * 10) + last_digit;
-    } while (number > 0);
+    }
+    while (number > 0);
 
     // if reversed is same as the original
     // then the number is palindrome
     if (original == reverse)
     {
-        printf("It is a Palindrome number.");
+        printf("It is a Palindrome number.\n");
     }
     else
     {
