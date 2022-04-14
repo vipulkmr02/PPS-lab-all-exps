@@ -2,16 +2,31 @@
 
 int main()
 {
-    // To sort an array of size n in ascending order:
-    // 1: Iterate from arr[1] to arr[n] over the array.
-    // 2: Compare the current element (key) to its predecessor.
-    // 3: If the key element is smaller than its predecessor, 
-    // compare it to the elements before. Move the greater elements
-    // one position up to make space for the swapped element
+    int i, j, length;
+    // taking input in the array 
+    scanf("%d", &length);
+    int array[length];
 
-    // 5 1 4 2 8
-    
+    for (i = 0; i < length; i++)
+        scanf("%d", &array[i]);
 
-    printf("running...\n");
+    for (i = 1; i < length; i++)
+    {
+        int current = array[i];
+        j = i - 1;
+
+        while (j >= 0 && array[j] > current)
+        {
+            array[j + 1] = array[j];
+            j--;
+        }
+        array[j + 1] = current;
+    }
+
+    // printing the array
+    for (i = 0; i < length - 1; i++)
+        printf("%d,", array[i]);
+    printf("%d\n", array[length - 1]);
+
     return 0;
 }
