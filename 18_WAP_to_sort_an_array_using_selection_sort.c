@@ -12,28 +12,25 @@ int main()
         scanf("%d", &array[i]);
 
     // sorting starts
-    for (i = 1; i < length; i++)
+    for (i = 0; i < length - 1; i++)
     {
-        int min_index, min = array[i];
-        for (int j = i - 1; j < length; j++)
-        {
-            int element = array[j];
-            // minimum element is found here.
-            if (min > element)
-            {
+        int min_index = i;
+        // this loop is for finding the  minimum element.
+        for (int j = i + 1; j < length; j++)
+            if (array[min_index] > array[j])
                 min_index = j;
-                min = element;
-            }
-        }
 
         // values are swapped here
-        array[min_index] = array[i - 1];
-        array[i - 1] = min;
+        int temp = array[i];
+        array[i] = array[min_index];
+        array[min_index] = temp;
     }
 
     // printing the array
     for (i = 0; i < length; i++)
         printf("%d ", array[i]);
+
+    printf("\n");
 
     return 0;
 }
