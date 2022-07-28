@@ -5,7 +5,7 @@ test.c
 *.*exe
 *.*jpeg
 *.*txt
-.vscode
-.idea
-.cph
-.ipynb_checkpoints
+.vscode/
+.idea/
+.cph/
+.ipynb_checkpoints/
