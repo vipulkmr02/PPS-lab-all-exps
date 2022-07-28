@@ -27,10 +27,11 @@ int main()
     }
 
     // printing the array
-    for (i = 0; i < length; i++)
-        printf("%d ", array[i]);
+    for (i = 0; i < length - 1; i++)
+        printf("%d, ", array[i]);
 
-    printf("\n");
+    // last element
+    printf("%d\n", array[length - 1]);
 
     return 0;
 }

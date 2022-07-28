@@ -3,7 +3,7 @@
 int main()
 {
     // initializing the variables
-    int a = 1, b = 11;
+    int a = 1, b = 10;
     printf("Before: %d %d\n", a, b);
 
     // swapping with a third variable

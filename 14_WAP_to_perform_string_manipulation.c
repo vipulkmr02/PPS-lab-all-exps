@@ -6,7 +6,7 @@ int main(){
     char array[20];
 
     // taking input of the string
-    gets(array);
+    fgets(array);
 
     // strlen gives the length of the string
     int len = strlen(array);

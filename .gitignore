@@ -6,3 +6,6 @@ test.c
 *.*jpeg
 *.*txt
 .vscode
+.idea
+.cph
+.ipynb_checkpoints

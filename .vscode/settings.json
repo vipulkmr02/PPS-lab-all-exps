@@ -3,5 +3,6 @@
         "*.html": "html",
         "*.py": "python",
         "string.h": "c"
-    }
+    },
+    "jupyter.jupyterServerType": "local"
 }
